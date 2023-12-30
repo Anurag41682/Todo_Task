@@ -8,7 +8,7 @@ function ListItem(props) {
   }
   function handleEdit(id) {
     const itemToEdit = props.list.filter((item) => {
-      return item.id == id;
+      return item.id === id;
     });
     props.setInputVal(itemToEdit[0].content);
     props.setIsEditing(true);

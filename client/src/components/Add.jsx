@@ -1,3 +1,4 @@
+import { addTask } from "../api";
 function Add(props) {
   function handleSubmit() {
     if (props.isEditing) {
@@ -10,7 +11,9 @@ function Add(props) {
       props.setIsEditing(!props.isEditing);
     } else {
       const id = Date.now();
-      props.setList([...props.list, { id, content: props.inputVal }]);
+      const data = { id, content: props.inputVal };
+      addTask(data);
+      props.setList([...props.list, data]);
     }
     props.setInputVal("");
   }
