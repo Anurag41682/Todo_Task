@@ -7,9 +7,14 @@
   "version": "1.0.0",
   "description": "A to-do WebApp",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node index.js",
+    "start-dev":"nodemon index.js"
   },
   "author": "Anurag",
   "license": "MIT"
