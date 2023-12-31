@@ -1,5 +1,4 @@
 body {
-  /* background-color: #333333; */
   background-color: #141414;
 }
 
@@ -8,7 +7,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* width: 80vw; */
 }
 
 .header {
@@ -27,7 +25,6 @@ body {
   width: 70vw;
   height: 50vh;
   overflow-y: auto;
-  /* border-radius: 50px; */
   padding: 20px;
   border: 5px solid;
   border-image: linear-gradient(to right, #a10787, #8a83ee) 1;
@@ -40,9 +37,11 @@ body {
   align-items: center;
   flex-direction: column;
 }
+
 .noData div {
   font-size: 3rem;
 }
+
 .noData span {
   font-size: 5rem;
 }
@@ -83,6 +82,7 @@ body {
   color: azure;
   box-shadow: 0 4px 8px #575757ee;
 }
+
 .editBtn:hover {
   background-color: #527aff;
 }
@@ -103,7 +103,6 @@ body {
   padding: 1rem;
   color: azure;
   font-size: 1rem;
-  /* border-color: #40d2ff; */
   border-image: linear-gradient(to right, #a10787, #8a83ee) 1;
   border-radius: 3px;
   width: 30vw;
@@ -117,6 +116,9 @@ body {
 
 .add {
   margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn {
@@ -126,8 +128,62 @@ body {
   font-size: 1rem;
   padding: 0.5rem;
   margin: 10px;
-  box-shadow: 0 4px 8px #a7a7a7ee;
+  box-shadow: 0 4px 8px #505050ee;
 }
+
 .btn:hover {
   background-color: #527aff;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    font-size: 1.7rem;
+  }
+
+  .noData div {
+    font-size: 2rem;
+  }
+
+  .noData span {
+    font-size: 4rem;
+  }
+
+  .listItem {
+    height: 2rem;
+    margin: 15px;
+    font-size: small;
+    font-weight: bolder;
+    gap: 0.5rem;
+  }
+  .content {
+    background-color: #292929;
+    padding-left: 0.6rem;
+  }
+
+  /**/
+  .comboBtn {
+    background-color: #000820;
+    border-radius: 10px;
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .editBtn {
+    font-size: x-small;
+  }
+
+  .deleteBtn {
+    font-size: x-small;
+  }
+
+  .inputArea {
+    padding: 0.5rem;
+    font-size: small;
+    border-image: linear-gradient(to right, #a10787, #8a83ee) 1;
+  }
+
+  .btn {
+    font-size: x-small;
+    padding: 0.5rem;
+  }
 }
