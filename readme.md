@@ -1,6 +1,6 @@
 ## TO DO WEB APP
 
-A to do WebApp for managing daily task.
+A To-do WebApp for managing daily task.
 
 Features:
 
