@@ -12,3 +12,7 @@ Features:
 In Progress:
 
 1. Search
+
+### Deployment
+
+https://todo-task-frontend-eta.vercel.app/
