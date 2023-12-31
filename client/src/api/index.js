@@ -1,7 +1,7 @@
 import axios from "axios";
 
-const URL = "http://localhost:3001/";
-
+// const URL = "http://localhost:3001/";
+const URL = "https://todo-task-chi-ten.vercel.app/";
 const API = axios.create({ baseURL: URL });
 
 export const addTask = (data) => {
