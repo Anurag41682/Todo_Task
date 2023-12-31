@@ -1,6 +1,6 @@
 ## TO DO WEB APP
 
-A to do WebApp for managint daily task.
+A to do WebApp for managing daily task.
 
 Features:
 
