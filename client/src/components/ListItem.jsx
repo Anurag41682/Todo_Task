@@ -1,5 +1,8 @@
+import { removeTask } from "../api";
 function ListItem(props) {
-  function handleDelete(id) {
+  async function handleDelete(id) {
+    await removeTask(id);
+
     props.setList(
       props.list.filter((item) => {
         return item.id !== id;

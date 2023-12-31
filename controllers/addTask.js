@@ -2,8 +2,8 @@ import initializeDatabase from "../dbInit.js";
 
 const db = initializeDatabase();
 
-const addTask = (req, res) => {
-  const { id, content } = req.body; // Sanitize or validate input here
+const addTask = async (req, res) => {
+  const { id, content } = req.body;
   db.run(
     "INSERT INTO table_name (ID, CONTENT) VALUES (?, ?)",
     [id, content],
