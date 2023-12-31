@@ -14,3 +14,7 @@ export const removeTask = (id) => {
 export const fetchData = () => {
   return API.get("/get");
 };
+
+export const editTask = (id, dataToUpdate) => {
+  return API.patch(`/update/${id}`, { content: dataToUpdate });
+};

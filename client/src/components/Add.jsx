@@ -1,8 +1,10 @@
 import { addTask } from "../api";
+import { editTask } from "../api";
 function Add(props) {
   async function handleSubmit() {
     if (props.isEditing) {
       const updatedItem = { id: props.itemIdToEdit, content: props.inputVal };
+      await editTask(props.itemIdToEdit, props.inputVal);
       props.setList(
         props.list.map((item) =>
           item.id === props.itemIdToEdit ? updatedItem : item
@@ -12,7 +14,7 @@ function Add(props) {
     } else {
       const id = Date.now();
       const data = { id, content: props.inputVal };
-      const resGet = await addTask(data);
+      await addTask(data);
 
       props.setList([...props.list, data]);
     }
