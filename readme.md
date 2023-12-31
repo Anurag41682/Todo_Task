@@ -1,3 +1,10 @@
 ## TO DO WEB APP
 
-A TO DO WEBAPP FOR MANAGING DAILY TASK
+A to do WebApp for managint daily task.
+
+Features:
+
+1. Add
+2. Update
+3. Delete
+4. Edit
