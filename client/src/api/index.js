@@ -1,7 +1,8 @@
 import axios from "axios";
 
 // const URL = "http://localhost:3001/";
-const URL = "https://to-do-backend-4qx7.onrender.com/";
+// const URL = "https://to-do-backend-4qx7.onrender.com/";
+const URL = "https://anur4g.azurewebsites.net/";
 const API = axios.create({ baseURL: URL });
 
 export const addTask = (data) => {
