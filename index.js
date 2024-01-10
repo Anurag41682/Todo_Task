@@ -13,9 +13,11 @@ app.use("/", addTask);
 app.use("/", removeTask);
 app.use("/", getTask);
 app.use("/", editTask);
+
 // server start
-app.listen("8080", () => {
-  console.log("server is listening");
+const PORT = 3000;
+app.listen(PORT, () => {
+  console.log(`server is listening to PORT : ${PORT}`);
 });
 
 app.get("/", (req, res) => {
