@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions
+        uses: actions/checkout
 
       - name: SSH and deploy
         env:
