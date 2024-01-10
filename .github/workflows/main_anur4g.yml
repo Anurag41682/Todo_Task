@@ -19,4 +19,4 @@ jobs:
         run: |
           echo "$SSH_PRIVATE_KEY" > keyfile
           chmod 600 keyfile
-          ssh -tt -o StrictHostKeyChecking=no -i keyfile ubuntu@ec2-52-66-252-189.ap-south-1.compute.amazonaws.com "sudo bash ~/deploy.sh"
+          ssh -tt -o StrictHostKeyChecking=no -i keyfile ubuntu@ec2-3-109-206-218.ap-south-1.compute.amazonaws.com "sudo bash ~/deploy.sh"
